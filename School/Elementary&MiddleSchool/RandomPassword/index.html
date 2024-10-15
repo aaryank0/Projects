@@ -1,0 +1,30 @@
+<link rel="stylesheet" type="text/css" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<div class="page" id="page">
+  <title> Random Password Generator </title>
+  <header>
+    <h1> Random Password Generator </h1>
+  </header>
+ 
+  <div class="history">
+  </div>
+  <button onclick="gen(); addToHistory()"> ↻ </button>
+  <input type="text" id="outputBox" disabled style="cursor:text">
+  <input type="text" id="strengthBox" disabled="disabled">
+  <br><br>
+  <div class="slidecontainer">
+    <p id="len">Length: <span id="demo">16</span></p>
+    <input type="range" min="4" max="40" value="16" class="slider" id="myRange" oninput="changeLength()">
+  </div>
+  <br><br><br><br>
+  <input type="checkbox" id="numbersCB" class="cb" onclick="gen(); addToHistory();" checked>
+  <label for="numbers">Include Numbers </label>
+  
+  <input type="checkbox" id="uppersCB" class="cb" onclick="gen(); addToHistory();" checked>
+  <label for="uppers">Include Uppercase Letters </label>
+  
+  <input type="checkbox" id="symbolsCB" class="cb" onclick="gen(); addToHistory();" checked>
+  <label for="symbols">Include Symbols </label>
+</div>
+  <script type = "text/javascript" src = "js.js"></script>

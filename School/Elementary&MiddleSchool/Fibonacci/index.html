@@ -1,0 +1,55 @@
+<html>
+<head>
+  <title> Fibonacci Sequence Calculator </title>
+  <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+  <body>
+
+    <div id="content">
+      <div id="browser-window">
+        <div id="browser-window-top">
+          <div id="browser-window-circles">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </div>
+        <div id="browser-window-body">
+          <h1>Fibonacci Sequence Calculator</h1>
+          <div id="browser-window-content">
+            <div id="tool-description">
+              
+              <h2> How many values of the sequence do you want? </h2>
+              <input type="number" id="seqVals" max="200"> 
+              
+              <textarea id="output" disabled></textarea>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+<script>
+  let total, output, i;
+  total = 0;
+  function getFibonacci(num){
+    var fib = [0, 1];
+    for (i = 2; i <= num; i++) {
+      fib[i] = fib[i - 2] + fib[i - 1];
+    }
+    return `ANSWER: \n${fib}`;
+  }
+  document.getElementById("seqVals").onkeyup = function() {
+    if (document.getElementById("seqVals").value === "") {
+      document.getElementById("output").style.display = "none";
+      document.getElementById("browser-window-content").style.margin = "60px 0px";
+    } else{ 
+      document.getElementById("output").value = getFibonacci(document.getElementById("seqVals").value);
+      document.getElementById("output").style.display = "block";
+    }
+  }
+</script>
+            

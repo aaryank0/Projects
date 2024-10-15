@@ -1,0 +1,90 @@
+@import url('https://fonts.googleapis.com/css?family=Asap:400,500,700');
+*{
+    margin: auto;
+    padding: auto;
+    box-sizing: border-box;
+    font-family: Asap, sans-serif;
+    outline: none;
+}
+
+body{
+    background-color: #24272E;
+    text-align: center;
+    color: white;
+}
+
+header{
+    background: white;
+    padding: 20px;
+}
+
+header > h1 {
+    color: #25272E;
+    text-align: center;
+    background: white;
+    padding: 20px;
+}
+
+h3{
+  color: white;
+  padding: 10px;
+}
+
+.window{
+  width: 25vw;
+  height: 25vw;
+  background-color: #24272E;
+  border: 5px solid white;
+  border-radius: 15px;
+  margin: 10px auto;
+  color: white;
+}  
+
+#totalPrice, #from {
+  padding: 6px 12px;
+  border:none;
+  background-color: #24272E;
+  border: 1px solid white;
+  border-radius: 5px;
+  color: white;
+}
+p{
+  margin: 5px auto;
+}
+#output{
+  height: 100%;
+  width: 40%;
+  margin: auto;
+  background-color: #24272E;
+  border: none;
+  cursor: default;
+  color: white;
+  font-size: 18px;
+}
+button{
+  padding: 6px 12px;
+  border: 1px solid white;
+  border-radius: 5px;
+  background: transparent;
+  color: white;
+  cursor: pointer;
+}
+
+
+/* number input buttons */
+/* Chrome, Safari, Edge, Opera */
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+
+
+
+

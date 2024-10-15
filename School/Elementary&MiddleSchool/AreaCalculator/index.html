@@ -1,0 +1,64 @@
+<html>
+  <head>
+    <title> Area Calculator </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <br><br>
+    <h1> Area Calculator </h1>
+    <br><br>
+    <select id="shape" oninput="showInput();">
+      <option style="display:none"> Select a shape </option>
+      <option value="circle"> Circle </option>
+      <option value="square"> Square </option>
+      <option value="rectangle"> Rectangle </option>
+      <option value="triangle"> Triangle </option>
+    </select>
+    <select id="unit" oninput="calculate()">
+      <option style="display:none;"> Select a unit </option>
+      <option value="feet"> Feet </option>
+      <option value="yards"> Yards </option>
+      <option value="inches"> Inches </option>
+      <option value="miles"> Miles </option>
+      <option value="meters"> Meters </option>
+      <option value="kilometers"> Kilometers </option>
+      <option value="centimeters"> Centimeters </option>
+    </select>
+    <br><br><br>
+    <div id="circle" style="display:none;">
+      <h3> Circle </h3>
+      <br><br>
+      <label for="circleRadius"> Radius (r): </label>
+      <input id="circleRadius" onkeyup="calculate()">
+    </div>
+    <div id="square" style="display:none;">
+      <h3> Square </h3>
+      <br><br>
+      <label for="squareLengthWidth"> Length/Width (l/w): </label>
+      <input id="squareLengthWidth" onkeyup="calculate()">
+    </div>
+    <div id="rectangle" style="display:none;">
+      <h3> Rectangle </h3>
+      <br><br>
+      <label for="rectangleLength"> Length (l): </label>
+      <input id="rectangleLength" onkeyup="calculate()">
+      <br>
+      <label for="rectangleWidth"> Width (w): </label>
+      <input id="rectangleWidth" onkeyup="calculate()">
+    </div>
+    <div id="triangle" style="display:none;">
+      <h3> Triangle </h3>
+      <br><br>
+      <label for="triangleBase"> Base (b): </label>
+      <input id="triangleBase">
+      <br>
+      <label for="triangleHeight"> Height (h): </label>
+      <input id="triangleHeight" onkeyup="calculate()">
+    </div>
+    <br><br>
+    <input id="outputBox" disabled="disabled" style="display:none;">
+  </body>
+  <script type="text/javascript" src="js.js"></script>
+  <script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
+</html>
+  

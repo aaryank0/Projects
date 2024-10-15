@@ -1,0 +1,36 @@
+// Purpose: Help me practice and get better with multiplying two digit numbers in my head
+
+<title>2 digit multiplication</title>
+<script>
+  function randomNumber(min, max) { //min AND mix are inclusive
+    min = Math.ceil(min);
+    max = Math.floor(max);
+    return Math.floor(Math.random() * (max - min + 1) + min); 
+  }
+  const randomOne = randomNumber(10, 99).toString();
+  const randomTwo = randomNumber(10, 99).toString();
+  const correctAnswer = randomOne * randomTwo;
+  let userAnswer = prompt(`What is ${randomOne} multiplied by ${randomTwo}?`);
+  if (userAnswer == correctAnswer){
+    alert(`Correct! ${randomOne} multiplied by ${randomTwo} is ${correctAnswer}`);
+    document.location.reload();
+  } else {
+    var tryAgain = prompt(`Incorrect. Would you like to try again?`);
+    if (tryAgain.toLowerCase() == "yes"){
+      userAnswer = prompt(`What is ${randomOne} multiplied by ${randomTwo}?`);
+      alert(`Incorrect. ${randomOne} multiplied by ${randomTwo} is ${correctAnswer}, but you answered ${userAnswer}`);
+      document.location.reload();
+    } else if (tryAgain.toLowerCase() == "no") {
+      prompt(`${randomOne} multiplied by ${randomTwo} is ${correctAnswer}, but you answered ${userAnswer}`);
+    } else {
+      prompt(`Not a valid answer. Please say "yes" or "no". Would you like to try again?`)
+      if (tryAgain.toLowerCase() == "yes"){
+        userAnswer = prompt(`What is ${randomOne} multiplied by ${randomTwo}?`);
+        alert(`Incorrect. ${randomOne} multiplied by ${randomTwo} is ${correctAnswer}, but you answered ${userAnswer}`);
+        document.location.reload();
+      } else if (tryAgain.toLowerCase() == "no") {
+        prompt(`${randomOne} multiplied by ${randomTwo} is ${correctAnswer}, but you answered ${userAnswer}`);
+      }
+    }
+  }
+</script>

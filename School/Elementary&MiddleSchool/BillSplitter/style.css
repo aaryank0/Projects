@@ -1,0 +1,93 @@
+* {
+  outline: none;
+  border: none;
+  font-family: 'Fira Sans', sans-serif;
+  margin: 0;
+}
+
+.top-left,
+.top-right {
+  position: absolute;
+  height: 60vh;
+  width: 50vw;
+  top: 0;
+}
+
+.top-right {
+  right: 0;
+  background: #7ACFD7;
+}
+
+.top-left {
+  left: 0;
+  background-color: #C22629;
+}
+
+.bottom {
+  position: absolute;
+  height: 40vh;
+  /*edited from height: 60vh;*/
+  width: 100vw;
+  bottom: 0;
+  left: 0;
+  background-color: #F1EFEE;
+}
+
+.top-left,
+.top-right,
+.bottom {
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+  /*Edited from justify-content: space-around;*/
+  place-items: center;
+}
+
+
+/**/
+
+input[class='info'] {
+  font-size: 20px;
+  padding: 15px;
+  border-radius: 5px;
+  background: #FFF;
+  margin: 10px;
+  font-family: 'Fira Sans', sans-serif;
+  display: block;
+}
+
+input,
+input::placeholder {
+  color: grey;
+}
+
+button {
+  font-size: 18px;
+  padding: 15px;
+  width: 50%;
+  background-color: transparent;
+  color: #F1EFEE;
+  border: 3px solid #F1EFEE;
+  border-radius: 10px;
+  cursor: pointer;
+  
+}
+
+#output {
+  font-size: 20px;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  width: 50%;
+}
+
+#moneyOutput {
+  font-size: 100px;
+  padding: 5px;
+  background-color: transparent;
+  border-radius: 5px;
+  text-align: center;
+  color: black;
+  width: 50%;
+}

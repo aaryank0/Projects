@@ -1,0 +1,27 @@
+<html>
+
+<head>
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+	<title> Random Num Generator </title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+	<h1> Random Number Generator </h1>
+	<label for="num1">Min:</label>
+	<input type="text" id="num1">
+    <br><br>
+	<label for="num2">Max:</label>
+	<input type="text" id="num2">
+	<br><br>
+	<input type="radio" id="exclusive" name="isInclusive" checked>
+	<label for="exclusive"> Include minimum, but not maximum </label>
+	<br><br>
+	<input type="radio" id="inclusive" name="isInclusive">
+	<label for="inclusive"> Include minimum and maximum&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </label>
+	<br><br>
+	<button onclick="generate()">Generate</button>
+	<br><br><br><br>
+	<input id="outputBox" disabled="disabled">
+</body>
+<script type="text/javascript" src="js.js"></script>

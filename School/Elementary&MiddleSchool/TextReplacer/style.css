@@ -1,0 +1,46 @@
+*{
+    font-family: 'Fira Sans', sans-serif;
+    padding: 2px;
+    color: #9c9c9c;
+}
+*:focus{
+    outline: none;
+}
+
+body {
+	background: #0f0f0f;
+	text-align: center;
+}
+
+textarea {
+	border-radius: 5px;
+	width: 70%;
+    height: 30%;
+	border: none;
+    resize: none;
+    background: #232323;
+    color: #5f5f5f;
+}
+textarea[disabled="disabled"] {
+   background: #232323;
+   color: black;
+    color: #5f5f5f;
+}
+input{
+    border-radius: 5px;
+    border: none; 
+    background: #232323;
+}
+button{
+    border: none;
+    border-radius: 5px;
+    padding: 10px;
+    cursor: pointer;
+    background: #0f0f0f;
+    border: 1px solid grey;
+}
+
+h1{
+    text-decoration: underline;
+    color: #00b786;
+}

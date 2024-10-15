@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <title> Bill Split Calculator </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Fira+Sans&display=swap" rel="stylesheet">
+  </head>
+  <body>
+  <div class='top'>
+    <div class='top-left'>
+      <input type='text' class='info' id='totalBill' placeholder='Total bill'>
+      <input type='text' class='info' id='peopleAmount' placeholder='People'>
+    </div>
+    <div class='top-right'>
+      <div class='tip'>
+        <input type='text' class='info' id='tip' placeholder='Tip (in percent)'>
+      </div>
+      <button onclick="calculate()"> Calculate </button>
+    </div>
+  </div>
+<div class="bottom">
+  <input id="output" disabled>
+  <input id="moneyOutput" disabled>
+</div>
+  </body>
+</html>
+<script type="text/javascript" src="js.js"></script>
+<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>

@@ -1,0 +1,28 @@
+<html>
+  <head>
+    <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+     <title> Tip Calculator </title>
+  </head>
+  <body>
+    <header> <h1> Tip Calculator </h1> </header>
+    
+    <div class="inputs">
+      <h3> Bill amount </h3>  
+      $<input type="number" id="moneys">
+      <h3> Tip Percentage </h3><br>
+      <input type="number" id="tips">%
+    </div>
+    
+    <button onclick = "calculate()"> Calculate </button>
+    
+    <div class="outputs">
+      <input type="text" id="outputBox" name="outputBoxName" disabled="disabled" value="Tip: $">
+      <input type="text" id="outputBox1" name="outputBox1Name" disabled="disabled" value="Total Bill: $">
+    </div>
+
+    
+  </body>
+</html>
+<script type = "text/javascript" src = "js.js"></script>

@@ -1,0 +1,29 @@
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<script src="https://code.jquery.com/ui/1.12.1/jquery-ui.min.js"></script>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<div class="page" id = "page">
+    <title> Random Name Generator </title>
+    <header>
+        <h1> Random Name Generator </h1>
+    </header>
+    <br><br>
+    <div class="history">
+    </div>
+    <select id="genderSelect">
+        <option value = "0"> Select Gender </option>
+        <option value = "1"> Boy </option>
+        <option value = "2"> Girl </option>
+        <option value = "3"> Either </option>
+    </select>
+    <br><br><br>
+    <input type = "checkbox" id = "middel">
+    <label for = "middel"> Include a middle name </label>
+    <br><br><br>
+  
+    <button id="generator" onclick="generate()"> Generate </button>
+    <br><br>  
+    <input type="text" id="outputBox" name="outputBoxName" disabled="disabled">
+    <script type = "text/javascript" src = "js.js"></script>
+</div>  

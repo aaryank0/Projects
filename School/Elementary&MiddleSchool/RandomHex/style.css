@@ -1,0 +1,51 @@
+*{
+  font-family: 'Fira Sans', sans-serif;
+}
+*:focus{
+  outline: none;
+}
+
+body{
+  text-align: center;
+  margin-top: 100px;
+}
+
+#showHex{
+  font-size: 60px;
+  color: white;
+  text-decoration: underline;
+}
+
+button{
+  cursor: pointer;
+  padding: 10px;
+  transition: .5s;
+  border: 1px solid black;
+  background: white;
+  border-radius: 5px;
+}
+button:hover{
+  transform: scale(1.1);
+}
+
+#history{
+  position: absolute;
+  height: 99.5%;
+  width: 250px;
+  border: 2px solid black;
+  border-radius: 5px;
+  top: 0;
+  float: left;
+  background: white;
+  overflow-y: auto;
+}
+
+#historyItem{
+  margin: 2px;
+  border: 2px solid black;
+  border-radius: 5px;
+}
+
+#historyHex{
+  color: white;
+}

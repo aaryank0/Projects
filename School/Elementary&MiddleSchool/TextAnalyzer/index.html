@@ -1,0 +1,21 @@
+<html>
+  <head>
+    <title> Character Counter </title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
+    <h1> Character Counter </h1>
+    <br>
+    <textarea id="input" onkeyup="count(this)" placeholder="Enter your text here..." autofocus></textarea><br><br>
+    <input type="checkbox" id="removeSpace" onclick="count(document.getElementById('input'))">
+    <label for="removeSpace" >Don't Include Spaces</label><br><br>
+    <div class="outputs">
+      <span id="vowels">0 Vowels</span><br>
+      <span id="chars">0 Characters</span><br>
+      <span id="words">0 Words</span><br>
+      <span id="sentences">0 Sentences</span><br>
+      <span id="lines">0 Lines</span>
+    </div>
+  </body>
+</html>
+<script type="text/javascript" src="js.js">

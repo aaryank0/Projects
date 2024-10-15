@@ -1,0 +1,31 @@
+<html>
+    <head>
+        <script type="text/javascript" src="js.js"></script>
+        <title>Cookie Clicker!</title>
+        <link rel = "stylesheet" href = "style.css"/>
+    </head>
+
+    <body>
+        <div class="left">
+        <div id = "space"></div>
+          
+        <div id = "numbers"> </div>
+        <div id = "cookie" onclick="cookieClick()">
+            <img src="https://vignette.wikia.nocookie.net/cookieclicker/images/5/5a/PerfectCookie.png/revision/latest/window-crop/width/200/x-offset/0/y-offset/0/window-width/513/window-height/512?cb=20130827014912">
+        </div>
+          <div id="perclick">1 Cookie per Click</div>
+          <br>
+          <p><u> You have: </u></p>
+          <p id="cursors" style="font-size: 25px;"> 0 cursors </p>
+          <p id="grandmas" style="font-size: 25px;"> 0 grandmas </p>
+          <p id="mines" style="font-size: 25px;"> 0 cookie mines </p>
+       </div>
+      
+      <div class="right">
+      <p><u> Available Upgrades </u></p>
+          <button id="cursor" onclick="addCursor()" style="display:none;">Add cursor - 15 cookies - +0.1 cookie per click</button><br>
+          <button id="grandma" onclick="addGrandma()" style="display:none;">Add grandma - 100 cookies - +1 cookies per click</button><br>
+          <button id="mine" onclick="addCmine()" style="display:none;">Add cookie mine - 500 cookies - +8 cookies per click</button><br>
+      </div> 
+    </body>
+</html>

@@ -1,0 +1,27 @@
+<html>
+  <head>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+    <title> Roman Numeral Converter </title>
+    <h1> Roman Numeral Converter </h1>
+  </head>
+  <body>
+    <select id="selection" oninput="show()" onchange="">
+      <option style="display:none"> Choose conversion </option>
+      <option value="romanToNum"> Roman To Number </option>
+      <option value="numToRoman"> Number To Roman </option>
+    </select>
+    <div class = "romanToNum" style="display: none;" pattern="[ivxlcdmIVXLCDM]">
+      <label for="rtnInput">Enter Roman Numeral:</label>
+      <input type="text" id="rtnInput" pattern="^M{0,4}(CM|CD|D?C{0,3})(XC|XL|L?X{0,3})(IX|IV|V?I{0,3})$" />
+    </div>
+    <div class="numToRoman" style="display:none;">
+      <label for="ntrInput">Enter Num:</label>
+      <input type="number" id="ntrInput">
+    </div>
+    <button onclick="convert()" style="display:none;"> Convert </button>
+    <input id="outputBox" disabled="disabled" style="display:none;">
+  </body>
+</html>
+<script type="text/javascript" src="main.js"></script>
+<script type="text/javascript" src="functions.js"></script>

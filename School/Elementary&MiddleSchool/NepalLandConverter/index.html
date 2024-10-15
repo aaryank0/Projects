@@ -1,0 +1,58 @@
+<html>
+<head>
+  <link href="https://fonts.googleapis.com/css?family=Bungee|Bungee+Shade|Covered+By+Your+Grace" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:800" rel="stylesheet">
+  
+  <link rel="stylesheet" type="text/css" href="style.css">
+  
+</head>
+<body>
+  <title> Nepali Land Unit Converter </title>
+  
+<div class="page">
+  <header>
+    <h1> Nepali Land Unit Converter </h1>
+  </header>
+    
+<span> Convert from </span>  
+<br>    
+    
+ <input type="text" id="unitAmount"> &nbsp;     
+ <select id="fromUnitSelector">
+   <option style="display:none;"> Convert From </option>
+   <option value = "1"> Sq. Meter </option>
+   <option value = "2"> Sq. Ft. </option>
+   <option value = "3"> Ropani </option>
+   <option value = "4"> Anna </option>
+   <option value = "5"> Paisa </option>
+   <option value = "6"> Dam </option>
+ </select>
+<br><br>
+    
+<span> To </span>
+<br>
+         
+ <select id="toUnitSelector">
+   <option style="display:none;"> Convert To </option>
+   <option value = "1"> Sq. Meter </option>
+   <option value = "2"> Sq. Ft. </option>
+   <option value = "3"> Ropani </option>
+   <option value = "4"> Anna </option>
+   <option value = "5"> Paisa </option>
+   <option value = "6"> Dam </option>
+ </select>    
+    
+ <br><br><br><br>   
+    
+    <button onclick = "convert()"> Convert</button>
+    <br><br><br><br>
+    
+ <input type = "text" id = "outputBox" name = "outputBoxName" disabled = "disabled">     
+        
+   <br>
+    
+  </div>
+  <script src="ajax.googleapis.com/ajax/libs/jquery/1.11.0/jquery.min.js"></script>
+  <script type = "text/javascript" src = "js.js"></script>
+</body>
+</html>
